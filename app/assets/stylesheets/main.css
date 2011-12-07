@@ -1,0 +1,9 @@
+div#editorContainer {
+  overflow:hidden;
+}
+
+div#editorContainer div,
+div#editorContainer form {
+  float:left;
+  width: 45%;
+}

@@ -1,9 +1,22 @@
-div#editorContainer {
+div.splitPane {
   overflow:hidden;
 }
 
-div#editorContainer div,
-div#editorContainer form {
+div.splitPane > div{
   float:left;
   width: 45%;
+  margin-right: 10px;
+}
+
+div#previewPane {
+  border: 1px solid #CCC;
+  padding: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+
+  -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+
 }

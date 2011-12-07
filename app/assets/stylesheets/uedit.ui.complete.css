@@ -1,11 +1,11 @@
 ul.uedit_complete_button_strip
 {
-    width: 580px;
-    height: 32px;
+    width: 320px;
+    height: 70px;
     position: relative;
     margin: 0 0 10px 0;
     padding:0;
-    
+    overflow:hidden;
 }
 
 .uedit_complete_textarea
@@ -22,8 +22,8 @@ li.uedit_complete_button
     margin: 0;
     padding: 0;
     list-style: none;
-    position: absolute; 
     top: 0;
+    float:left
 }
 
 li.uedit_complete_button a

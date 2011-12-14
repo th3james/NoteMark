@@ -11,21 +11,21 @@
       </div>
     <% end %>
 
-<div class='splitPane'>
-  <div >
-    <div class="field">
-      <%= f.label :title %><br />
-      <%= f.text_field :title %>
-    </div>
-    <ul style="margin-top: 50px" id="uedit_button_strip"></ul>
-    <div class="field">
-      <%= f.label :body %><br />
-      <%= f.text_area :body, :id => 'uedit_textarea' %>
-    </div>
-  </div>
+    <div class='splitPane'>
+      <div>
+        <div class="field">
+          <%= f.label :title %>
+          <%= f.text_field :title %>
+        </div>
+        <ul style="margin-top: 50px" id="uedit_button_strip"></ul>
+        <div class="field">
+          <%= f.label :body %>
+          <%= f.text_area :body, :id => 'uedit_textarea' %>
+        </div>
+      </div>
 
-  <div id="previewPane"></div>
-</div>
+      <div id="previewPane"></div>
+    </div>
     <div class="actions">
       <%= f.submit %>
     </div>

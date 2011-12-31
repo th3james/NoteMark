@@ -24,8 +24,7 @@ var UeditUserInterfaceComplete = (function(){
     };
     
     var enabledButtons = [
-        'align_left', 'align_right', 'align_center',
-        'align_justified', 'bold', 'italic', 'deleted', 'help',
+        'bold', 'italic', 'deleted', 'help',
         'ulist', 'numlist', 'code', 'link', 'video', 'image', 'undo', 'redo'
     ];
     

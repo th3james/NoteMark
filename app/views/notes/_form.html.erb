@@ -12,14 +12,12 @@
     <% end %>
 
     <div class='splitPane'>
-      <div>
+      <div id='editPane'>
         <div class="field">
-          <%= f.label :title %>
           <%= f.text_field :title %>
         </div>
-        <ul style="margin-top: 50px" id="uedit_button_strip"></ul>
+        <ul id="uedit_button_strip"></ul>
         <div class="field">
-          <%= f.label :body %>
           <%= f.text_area :body, :id => 'uedit_textarea' %>
         </div>
       </div>

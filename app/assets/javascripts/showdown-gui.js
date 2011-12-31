@@ -275,24 +275,28 @@ function getWindowHeight(element) {
 
 function setPaneHeights() {
     var textarea  = inputPane;
-	var footer = document.getElementById("footer");
+    var windowHeight = getWindowHeight();
+    var textareaTop = getTop(textarea);
+    var previewTop = getTop(previewPane);
+    // How much offset to leave for the footer
+    var bottomPageOffset = 180;
+    // textArea Room
+    var taRoomLeft = windowHeight - textareaTop;
+    // preview page room
+    var prRoomLeft = windowHeight + 9 - previewTop ;
 
-	var windowHeight = getWindowHeight();
-	var textareaTop = getTop(textarea);
+    // catch 0s
+    if (taRoomLeft < 0) taRoomLeft = 0;
+    if (prRoomLeft < 0) prRoomLeft = 0;
 
-	// figure out how much room the panes should fill
-	var roomLeft = windowHeight - textareaTop;
+    // if it hasn't changed, return (we only need to check ta value)
+    if (taRoomLeft == lastRoomLeft) {
+      return;
+    }
+    lastRoomLeft = taRoomLeft;
 
-	if (roomLeft < 0) roomLeft = 0;
-
-	// if it hasn't changed, return
-	if (roomLeft == lastRoomLeft) {
-		return;
-	}
-	lastRoomLeft = roomLeft;
-
-	// resize all panes
-	inputPane.style.height = roomLeft + "px";
-	previewPane.style.height = roomLeft + "px";
+    // resize all panes
+    inputPane.style.height = (taRoomLeft - bottomPageOffset) + "px";
+    previewPane.style.height = (prRoomLeft - bottomPageOffset) + "px";
 }
 

@@ -38,6 +38,7 @@ div.splitPane {
     margin-right: 0;
     padding: 10px;
     background: url('/assets/paper_bk.png/'), repeat;
+    overflow:scroll;
 
     -webkit-border-radius: 6px 0 0 6px;
     -moz-border-radius: 6px 0 0 6px;

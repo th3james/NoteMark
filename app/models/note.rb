@@ -1,15 +1,17 @@
 class Note < ActiveRecord::Base
   DEFAULT_TITLE = 'Note Name...'
-  DEFAULT_BODY = "# Neque porro quisquam est qui dolorem ipsum
-Fusce eu arcu velit. Sed lobortis quam vel velit gravida sagittis. In a eros quis quam sagittis ullamcorper non id neque. Cras eros elit, elementum sed ullamcorper quis, blandit vitae lacus. Sed vel quam neque. In hac habitasse platea dictumst. Etiam tincidunt risus non sem egestas sit amet bibendum mauris fringilla.
+  DEFAULT_BODY = "# Welcome to NoteDown
+NoteDown is a simple web based document editor, based on the [Markdown Language](http://daringfireball.net/projects/markdown/ ). It allows you to create, share and collaborate on formatted documents.
 
-* Praesent velit eros.
-* Praesent elementum ultricies nisi.
+### Content first
+Use [Markdown](http://daringfireball.net/projects/markdown/ )'s simple and intuitive syntax allows you to focus on your content first, providing a formatted preview of your work as you type.
 
-### Morbi lobortis varius imperdiet
+### Style and share
+When you're finished with your content:
 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec blandit erat suscipit felis ultricies interdum vel a urna. Duis vitae elit vulputate libero malesuada mollis sit amet non lacus. Aenean pulvinar mollis facilisis. Morbi lobortis varius imperdiet. Pellentesque interdum nisl quis enim eleifend non luctus elit egestas. Aliquam eu sagittis massa.
-"
+* Choose from a range of customisable themes for your document
+* Share your finished document with friends as a webpage, or invite others to collaborate on your document.
+* Download your document as a PDF"
   
   # Initialises a new note with default values
   #

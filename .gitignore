@@ -19,3 +19,5 @@
 *.swo
 *.un~
 vendor/ruby/*
+
+*.DS_Store

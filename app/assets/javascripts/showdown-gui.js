@@ -279,11 +279,12 @@ function setPaneHeights() {
     var textareaTop = getTop(textarea);
     var previewTop = getTop(previewPane);
     // How much offset to leave for the footer
-    var bottomPageOffset = 180;
+    var taBottomPageOffset = 200;
+    var prBottomPageOffset = taBottomPageOffset - 47 ;
     // textArea Room
     var taRoomLeft = windowHeight - textareaTop;
     // preview page room
-    var prRoomLeft = windowHeight + 9 - previewTop ;
+    var prRoomLeft = windowHeight - previewTop ;
 
     // catch 0s
     if (taRoomLeft < 0) taRoomLeft = 0;
@@ -296,7 +297,7 @@ function setPaneHeights() {
     lastRoomLeft = taRoomLeft;
 
     // resize all panes
-    inputPane.style.height = (taRoomLeft - bottomPageOffset) + "px";
-    previewPane.style.height = (prRoomLeft - bottomPageOffset) + "px";
+    inputPane.style.height = (taRoomLeft - taBottomPageOffset) + "px";
+    previewPane.style.height = (prRoomLeft - prBottomPageOffset) + "px";
 }
 

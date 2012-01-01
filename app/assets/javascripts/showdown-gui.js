@@ -280,7 +280,7 @@ function setPaneHeights() {
     var previewTop = getTop(previewPane);
     // How much offset to leave for the footer
     var taBottomPageOffset = 200;
-    var prBottomPageOffset = taBottomPageOffset - 47 ;
+    var prBottomPageOffset = taBottomPageOffset - 50 ;
     // textArea Room
     var taRoomLeft = windowHeight - textareaTop;
     // preview page room

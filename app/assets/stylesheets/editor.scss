@@ -1,19 +1,27 @@
 div.splitPane {
   overflow:hidden;
+  padding-bottom: 10px;
 
   div#editPane {
-    border-right: 1px solid #CCC;
+    border: 1px solid #CCC;
+    border-left: 0px;
     padding: 15px;
+    border-radius: 0 5px 5px 0;
+    margin-right: 20px;
+
+    -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 
     input,
     textarea {
-      width: 420px;
+      width: 433px;
     }
 
     ul.uedit_complete_button_strip {
       margin: 0;
       padding: 3px 3px 0px 3px;
-      width: 424px;
+      width: 436px;
       height: 35px;
 
       -webkit-border-radius: 3px;
@@ -31,14 +39,10 @@ div.splitPane {
     }
   }
 
-  div#previewPane {
-    float:right; 
-    border: 3px solid #1B1B1B;
-    border-right: 0px;
+  div#notepad-bg {
+    background-color: #333;
+    padding: 3px 0 3px 3px ;
     margin-right: 0;
-    padding: 10px;
-    background: url('/assets/paper_bk.png/'), repeat;
-    overflow:scroll;
 
     -webkit-border-radius: 6px 0 0 6px;
     -moz-border-radius: 6px 0 0 6px;
@@ -48,12 +52,28 @@ div.splitPane {
     -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
     box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 
+    div#previewPane {
+      float:right; 
+      border-left: 2px solid #DED6B4;
+      border-bottom: 2px solid #DED6B4;
+      padding: 10px;
+      background: url('/assets/paper_bk.png/'), repeat;
+      overflow:scroll;
+
+      -webkit-border-radius: 6px 0 0 6px;
+      -moz-border-radius: 6px 0 0 6px;
+      border-radius: 6px 0 0 6px;
+
+      -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.9);
+      -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.9);
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.9);
+
+    }
   }
 }
 
 div.splitPane > div{
   float:left;
-  width: 435px;
-  margin-right: 10px;
+  width: 443px;
 }
 

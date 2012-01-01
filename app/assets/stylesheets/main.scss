@@ -1,4 +1,4 @@
-$green: #15D180;
+$green: #7FD9CF;
 $pale-green: #DAF0E1;
 
 body {
@@ -8,15 +8,13 @@ div.container {
 }
 
 h1#site_header {
-  background-color: #000;
+  background-color: #333333;
   color: #FFF;
 
   font-size: 35px;
   padding: 15px;
-  border-radius: 5px;
 }
 
 .green-box {
   background-color: $green;
-  border-radius: 5px;
 }

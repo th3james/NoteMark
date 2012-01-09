@@ -1,9 +1,12 @@
 <p id="notice"><%= notice %></p>
 
 <div id='control-strip'>
-  <h2><%= @note.title %></h2>
+  <h1><%= @note.title %></h1>
   <div class='btn'>
     <%= link_to 'Edit', edit_note_path(@note)%> 
+  </div>
+  <div class='btn'>
+    <%= link_to 'Public Link', public_note_path(@note)%> 
   </div>
 </div>
 

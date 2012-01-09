@@ -21,6 +21,15 @@ class NotesController < ApplicationController
     end
   end
 
+  # GET /notes/1/public
+  def public
+    @note = Note.find(params[:id])
+
+    respond_to do |format|
+      format.html {render :layout => 'public'} # public.html.erb
+    end
+  end
+
   # GET /notes/new
   # GET /notes/new.json
   def new

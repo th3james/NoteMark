@@ -1,5 +1,9 @@
 NoteMark::Application.routes.draw do
-  resources :notes
+  resources :notes do
+    member do
+      get 'public'
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

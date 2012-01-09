@@ -2,7 +2,7 @@ $green: #7FD9CF;
 $pale-green: #DAF0E1;
 
 body {
-  background-color: #F2F2F2;
+  background-color: #E2E2E2;
 }
 .btn a:hover {
   text-decoration: none;
@@ -22,6 +22,10 @@ div.container {
   margin-bottom:0;
 }
 
+div.spacer {
+  margin-bottom: 20px;
+}
+
 h1#site_header {
   background-color: #333333;
   color: #FFF;
@@ -32,5 +36,12 @@ h1#site_header {
 }
 
 .green-box {
-  background-color: $green;
+  background: #6dd9d0; /* Old browsers */
+  background: -moz-linear-gradient(top, #6dd9d0 0%, #7fd9cf 50%, #61bfb7 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6dd9d0), color-stop(50%,#7fd9cf), color-stop(100%,#61bfb7)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #6dd9d0 0%,#7fd9cf 50%,#61bfb7 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #6dd9d0 0%,#7fd9cf 50%,#61bfb7 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #6dd9d0 0%,#7fd9cf 50%,#61bfb7 100%); /* IE10+ */
+  background: linear-gradient(top, #6dd9d0 0%,#7fd9cf 50%,#61bfb7 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6dd9d0', endColorstr='#61bfb7',GradientType=0 ); /* IE6-9 */
 }

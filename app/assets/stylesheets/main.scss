@@ -4,6 +4,11 @@ $pale-green: #DAF0E1;
 body {
   background-color: #F2F2F2;
 }
+.btn a:hover {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+}
 div.container {
   background-color: #FFF;
   border: 1px solid #AAA;
@@ -13,12 +18,17 @@ div.container {
   box-shadow: 0 1px 50px #AAA;
 }
 
+#notice {
+  margin-bottom:0;
+}
+
 h1#site_header {
   background-color: #333333;
   color: #FFF;
 
   font-size: 35px;
   padding: 15px;
+  margin-bottom:0;
 }
 
 .green-box {

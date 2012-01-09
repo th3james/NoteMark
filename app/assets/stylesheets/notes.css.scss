@@ -3,19 +3,20 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 $green: #7FD9CF;
 
-div.markdown-show {
-  padding: 10px 15px;
-}
-
 div#control-strip {
   overflow:hidden;
   background-color: $green;
-  padding: 5px;
+  padding: 5px 25px;
   h2 {
     float:left;
     margin-right: 10px;
   }
   div.btn {
     margin-left: 5px;
+    margin-top: 3px;
   }
+}
+
+div.markdown-show {
+  padding: 10px 25px;
 }

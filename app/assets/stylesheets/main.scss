@@ -5,6 +5,12 @@ body {
   background-color: #F2F2F2;
 }
 div.container {
+  background-color: #FFF;
+  border: 1px solid #AAA;
+  border-width: 0 1px;
+  -moz-box-shadow: 0 1px 50px #AAA;
+  -webkit-box-shadow: 0 1px 50px #AAA;
+  box-shadow: 0 1px 50px #AAA;
 }
 
 h1#site_header {

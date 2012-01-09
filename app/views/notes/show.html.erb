@@ -1,15 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @note.title %>
-</p>
+<div id='control-strip'>
+  <h2><%= @note.title %></h2>
+  <div class='btn'>
+    <%= link_to 'Edit', edit_note_path(@note)%> 
+  </div>
+  <div class='btn'>
+    <%= link_to 'Back', notes_path %>
+  </div>
+</div>
 
-<p>
-  <b>Body:</b>
-  <%= @note.body %>
-</p>
+<div class='markdown-show'>
+  <%= RDiscount.new(@note.body).to_html.html_safe %>
+</div>
 
 
-<%= link_to 'Edit', edit_note_path(@note) %> |
-<%= link_to 'Back', notes_path %>
